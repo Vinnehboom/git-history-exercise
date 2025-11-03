@@ -7,6 +7,9 @@ class Calculator
     a - b
   end
 
+  def divide(a, b)
+    a + b  # Bug! Should be a / b
+  end
 end
 
 # Testing documentation, we're just checking this in rails c.
@@ -15,3 +18,4 @@ calc = Calculator.new
 
 calc.add(1, 2)
 calc.subtract(10, 4)
+calc.divide(20, 4)
