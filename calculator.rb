@@ -8,8 +8,8 @@ class Calculator
     @total
   end
 
-  def multiply(a, b)
-    a * b
+  def clear
+    @total = 0
   end
 
   def add(value)
@@ -48,4 +48,5 @@ end
 # Or run individual tests:
 # ruby tests/test_basic_operations.rb
 # ruby tests/test_power_operations.rb
+# ruby tests/test_clear_operations.rb
 
