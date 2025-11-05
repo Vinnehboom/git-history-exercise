@@ -1,27 +1,45 @@
 class Calculator
-  def add(a, b)
-    a + b
+  
+  def initialize
+    @total = 0
   end
 
-  def subtract(a, b)
-    a - b
+  def total
+    @total
   end
 
   def multiply(a, b)
     a * b
   end
 
-  def power(a, b)
-    a ** b
+  def add(value)
+    @total += value
+    @total
   end
 
-  def square(a)
-    power(a, 2)
+  def subtract(value)
+    @total -= value
+    @total
   end
 
-  def cube(a)
-    power(a, 3)
+  def multiply(value)
+    @total *= value
+    @total
   end
+
+  def power(exponent)
+    @total = @total ** exponent
+    @total
+  end
+
+  def square
+    power(2)
+  end
+
+  def cube
+    power(3)
+  end
+
 end
 
 # Run all tests with:
